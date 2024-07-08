@@ -5,7 +5,7 @@ import 'dotenv/config';
 const app = express();
 
 const proxy = createProxyMiddleware({
-  target: 'https://jsonplaceholder.typicode.com/',
+  target: 'https://api.themoviedb.org',
   changeOrigin: true,
 });
 
